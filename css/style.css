@@ -80,8 +80,8 @@ h4 {
 }
 .landing-text a {
   padding: 2% 5% 2% 5%;
-  background-color: transparent;
-  border: 2px solid #f2f2f2;
+  background-color: #FF3414;
+  border: 2px solid #FF3414;
   color: white;
   border-radius: 50px;
   width: auto;
@@ -92,6 +92,7 @@ h4 {
 }
 .landing-text a:hover {
   background-color: white;
+  border-color: white;
   color: black;
   transition: all 300ms ease;
 }
@@ -106,14 +107,20 @@ h4 {
 }
 .about-text {
   width: 50%;
+  color: #727272;
 }
 .about-text i {
   display: block;
   margin-bottom: 2%;
+  color: #FF3414;
+}
+.grey-text {
+  color: #727272;
 }
 .about-text h2 {
   font-size: 40px;
   margin: 0;
+  color: #2C2C2C;
 }
 .about-image {
   width: 50%;
@@ -153,7 +160,13 @@ h4 {
   margin: 2%;
   height: 100%;
 }
-
+.service a {
+  color: #FF3414;
+}
+.service p {
+  color: #727272;
+  margin-left: 3%
+}
 .contact-holder {
   display:flex;
   background-color: #F5FBFF;
@@ -165,6 +178,7 @@ h4 {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
+  color: #727272;
 }
 .contact-map {
   margin: 6% auto 2% auto;
@@ -257,4 +271,84 @@ h4 {
 }
 .total-holder p {
   color: #596672;
+}
+@media screen and (max-width: 600px) {
+  .about-holder {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .services-title {
+    font-size: 35px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .service {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .contact-text {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-holder {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .footer-element {
+    width: 100%;
+  }
+  .landing-text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .landing-text h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .landing-text a {
+    font-size: 15px;
+  }
+  .about-text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .about-text i {
+    margin-left: 5% !important;
+  }
+  .service p {
+    margin-left: 3%
+  }
+  .total-holder {
+    flex-direction: column-reverse;
+  }
+  .service-links {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .service-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .service-text p {
+    margin-left: 5%;
+  }
+  .service-landing > .dark h2 {
+    font-size: 25px;
+  }
+  .total-holder h2 {
+    font-size: 30px;
+    color: #FF3414;
+  }
 }
