@@ -145,6 +145,7 @@ h4 {
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: baseline;
   padding-top: 5%;
 }
 .responsive-img {
